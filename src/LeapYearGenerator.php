@@ -4,8 +4,8 @@
     {
         function checkLeapYear($input_year)
         {
-            if (($input_year % 4) != 0)
-                return false;
+            return (($input_year % 4) == 0);
+
         }
     }
 ?>
