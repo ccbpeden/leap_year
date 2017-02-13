@@ -15,5 +15,18 @@
             //Assert
             $this->assertEquals(false, $result);
         }
+
+        function test_checkLeapYear_true()
+        {
+            //Arrange
+            $test_LeapYearGenerator = new LeapYearGenerator;
+            $input = 2004;
+
+            //Act
+            $result = $test_LeapYearGenerator->checkLeapYear($input);
+
+            //Assert
+            $this->assertEquals(true, $result);
+        }
     }
 ?>
